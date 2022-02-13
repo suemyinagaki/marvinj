@@ -1,0 +1,31 @@
+{
+  "name": "marvinj-angular",
+  "version": "1.0.0",
+  "description": "This is a fork from MarvinJ Framework with minimal adpaptation for use in Angular and Ionic projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davicrystal/marvinj.git"
+  },
+  "keywords": [
+    "image",
+    "processing",
+    "ionic",
+    "angular",
+    "effects",
+    "redimensioning",
+    "halftone",
+    "grayscale",
+    "thresholding",
+    "scale"
+  ],
+  "author": "Davi Crystal",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/davicrystal/marvinj/issues"
+  },
+  "homepage": "https://github.com/davicrystal/marvinj#readme"
+}
