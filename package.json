@@ -1,6 +1,6 @@
 {
   "name": "marvinj-angular",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a fork from MarvinJ Framework with minimal adpaptation for use in Angular and Ionic projects",
   "main": "index.js",
   "scripts": {
