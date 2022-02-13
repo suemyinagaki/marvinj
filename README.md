@@ -6,17 +6,17 @@ MarvinJ was created to be the Javascript version of Marvin Image Processing Fram
 If you are not familiar with Marvin Framework and want to play with MarvinJ, don't worry. The rest of this article shows the basic image processing features of MarvinJ using JSFiddle snippets that you can make your own version and play with it.
 
 ### Requirements
-Angular >= 12 
+*Angular >= 12*
 
 ### Install
-```
+```shell
 npm install marvinj-angular
 ```
 
 ### Working with MarvinJ Image Processor
 In the case of MarvinJ we load images from URLs and usually use a HTML5 canvas for displaying processed images.
 
-```
+```typescript
 
 import { Marvin, MarvinImage } from "marvinj-angular/marvinj";
 
@@ -25,10 +25,10 @@ import { Marvin, MarvinImage } from "marvinj-angular/marvinj";
 strUrlImage = "https://marvinj.org/images/example2.jpg";
 const objImg = new Image();
 const objCanvas: HTMLCanvasElement = document.createElement("canvas");
-const MarvinImage = new MarvinImage();
+const MarvinImageProcessor = new MarvinImage();
 var image;
 
-imgProcessor.load(strUrlImage, function () {
+MarvinImageProcessor.load(strUrlImage, function () {
   
    image = this.clone();
 
@@ -42,6 +42,7 @@ imgProcessor.load(strUrlImage, function () {
    objCanvas.height = image.height;
    image.draw(objCanvas);
    objImg.src = objCanvas.toDataURL();
+   
 });
 
 ```
