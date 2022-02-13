@@ -9,14 +9,16 @@ If you are not familiar with Marvin Framework and want to play with MarvinJ, don
 Angular >= 12 
 
 ### Install
+```
 npm install marvinj-angular
+```
 
 ### Working with MarvinJ Image Processor
 In the case of MarvinJ we load images from URLs and usually use a HTML5 canvas for displaying processed images.
 
 ```
 
-import { Marvin, MarvinImage } from "marvinj-angular";
+import { Marvin, MarvinImage } from "marvinj-angular/marvinj";
 
 ...
 
