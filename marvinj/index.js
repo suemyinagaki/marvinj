@@ -377,7 +377,8 @@ MarvinImage.prototype.isValidPosition = function (x, y) {
 MarvinImage.prototype.draw = function (canvas, x, y, alphaCombination) {
 	if (x == null) { x = 0; }
 	if (y == null) { y = 0; }
-	canvas.getContext("2d").putImageData(this.imageData, x, y);/*
+	canvas.getContext("2d").putImageData(this.imageData, x, y);
+	/*
 	if(alphaCombination == null || !alphaCombination){
 		canvas.getContext("2d").putImageData(this.imageData, x,y);
 	} else{
@@ -390,6 +391,10 @@ MarvinImage.prototype.draw = function (canvas, x, y, alphaCombination) {
 		img.src = c.toDataURL();
 		canvas.getContext("2d").drawImage(img, x, y);
 	}*/
+};
+
+MarvinImage.prototype.getImageData = function() {
+	return this.imageData;
 };
 
 MarvinImage.prototype.toBlob = function () {
